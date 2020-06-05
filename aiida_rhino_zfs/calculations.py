@@ -34,6 +34,8 @@ class DiffCalculation(CalcJob):
         spec.input('metadata.options.output_filename', valid_type=str, default='patch.diff')
         spec.input('parameters', valid_type=DiffParameters, help='Command line parameters for diff')
         spec.input('file1', valid_type=SinglefileData, help='First file to be compared.')
+        spec.input('geometry', valid_type=SinglefileData, help='First file to be compared.')
+
         spec.input('file2', valid_type=SinglefileData, help='Second file to be compared.')
         spec.output('rhino_zfs', valid_type=SinglefileData, help='diff between file1 and file2.')
 
