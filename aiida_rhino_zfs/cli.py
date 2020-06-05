@@ -17,6 +17,7 @@ from aiida.cmdline.params.types import DataParamType
 @verdi_data.group('rhino_zfs')
 def data_cli():
     """Command line interface for aiida-rhino-zfs"""
+    pass
 
 
 @data_cli.command('list')
